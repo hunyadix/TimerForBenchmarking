@@ -7,14 +7,14 @@
 class Timer
 {
 	protected:
-		time_t start_t;
-		time_t current_t;
-		double seconds_elapsed;	
+		time_t startTime;
+		time_t currentTime;
+		double secondsElapsed;	
 	public:
 		Timer();
 		~Timer();
-		virtual void restart(std::string  text_p);
-		virtual void print_seconds(std::string pretext_p, std::string post_text_p);
+		virtual void restart(std::string  text);
+		virtual void printSeconds(std::string preText, std::string postText);
 };
 
 #endif
